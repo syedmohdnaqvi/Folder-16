@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maindiv{
+            width: 80%;
+            height: 180vh;
+            margin-left: 14%;
+        }
+        .restdet{
+            width: 80%;
+            height: 80vh;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(245, 237, 227);
+        }
+        .buttons{
+            display: flex;
+        }
+        .btn1{
+            background-color: rgb(216, 208, 208);
+            padding: 10px 10px 10px 0px;
+            margin: 5px 5px 5px 5px;
+        }
+        .btn1:hover{
+            background-color: #1E88E5;; 
+        }
+        .img1{
+            width:20px; 
+            height:20px;
+            margin-left: 4px;
+        }
+        .sp1{
+            margin-bottom: 14px;
+            margin-left: 4px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        .btn2{
+            background-color: rgb(216,208,208);
+            padding: 10px 10px 10px 0px;
+            margin: 5px 5px 5px 5px;
+        }
+        .btn2:hover{
+            background-color: #1E88E5;;
+        }
+        .btn3{
+            background-color: rgb(216, 208, 208);
+            padding: 10px 10px 10px 0px;
+            margin: 5px 5px 5px 5px;
+        }
+        .sp2{
+            margin-right: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        .sp3{
+            margin-right: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        .img2{
+            width:30px; 
+            height:20px;
+        }
+        .typecat{
+            background-color: rgb(245, 237, 227);
+            width: 80%;
+            height: 20vh;
+            display: flex;
+        }
+        .select{
+            width: 100%;
+            height: 40px;
+        }
+        .sel1{
+            width: 30%;
+            margin-left: 20px;
+            
+        }
+        .sel2{
+            width: 30%;
+            margin-left: 30px;
+        }
+        .sel3{
+            width: 30%;
+            margin-left: 30px;
+            height: 20vh;
+            display: block;
+        }
+        .sel4{
+            width: 90%;
+            margin-left: 30px;
+            display: flex;
+            height: 10vh;
+            gap: 30px;
+        }
+
+        .sel5{
+            width: 90%;
+            margin-left: 30px;
+            display: flex;
+            height: 10vh;
+            gap: 20px;
+        }
+        .names{
+            display: flex;
+            width: 80%;
+            height: 50vh;
+        }
+        .input{
+            height: 40px;
+            width: 97%;
+        }
+        .checkbox{
+            margin-left: 30px;
+        }
+        .botdet{
+            padding: 20px 30px 20px 30px;
+        }
+        .ressub{
+            padding: 10px 10px 10px 10px;
+            background-color: #007790;
+            color: white;
+        }
+        .form2div{
+            width: 80%;
+            height: 30vh;
+            background-color: rgb(245, 237, 227);
+            display: flex;
+        }
+        .form3div{
+            width: 80%;
+            height: 30vh;
+            background-color: rgb(245, 237, 227);
+            display: flex;
+        }
+        .sel6{
+            width: 90%;
+            margin-left: 30px;
+            display: flex;
+            height: 10vh;
+            gap: 20px;
+            margin-top: 30px;
+        }
+</style>        
+</head>
+<body>
+
+    <div class="buttons">
+        <button onclick="apply()" class="btn1"><img src="man-doctor-svgrepo-com.svg" class="img1"><span class="sp1">Apply Online</span></button>
+        <button onclick="cont()" class="btn2"><img src="man-standing-reading-medical-history-in-his-hand-svgrepo-com.svg" class="img2"><span class="sp2">Continue with application</span></button>
+        <button onclick="third()" class="btn3"><span class="sp3">Third button</span></button>
+    </div>
+
+    <div id="up">
+        <div id="fa11" class="typecat">
+            <div class="sel1">
+             <br><br>
+            <form > 
+            <label for="">Application Type</label><br>
+            <select name="--Please Select--" id="1" placeholder="--Please Select--" class="select" selected>
+             <option value="--Please Select----">--Please Select----</option>
+             <option value="New PAN - Indian Citizen (Form 49A)">New PAN - Indian Citizen (Form 49A)</option>
+             <option value="New PAN - Foreign Citizen (Form 49AA)">New PAN - Foreign Citizen (Form 49AA)</option>
+             <option value="Changes or Correction in existing PAN Data / Reprint of PAN Card (No changes in existing PAN Data)">Changes or Correction in existing PAN Data / Reprint of PAN Card (No changes in existing PAN Data)</option>
+            </select>
+            </div>
+            <div class="sel2">
+             <br><br>
+            <label for="">Application Type</label><br>
+            <select name="--Please Select--" id="1" placeholder="--Please Select--" class="select" selected>
+             <option value="--Please Select----">--Please Select----</option>
+             <option value="INDIVIDUAL">INDIVIDUAL</option>
+             <option value="ASSOCIATION OF PERSONS">ASSOCIATION OF PERSONS</option>
+             <option value="BODY OFINDIVIDUALS">BODY OFINDIVIDUALS</option>
+             <option value="COMPANY">COMPANY</option>
+             <option value="TRUST">TRUST</option>
+             <option value="LIMITED LIABILITY PARTNERSHIP">LIMITED LIABILITY PARTNERSHIP</option>
+             <option value="FIRM">FIRM</option>
+             <option value="GOVERNMENT">GOVERNMENT</option>
+             <option value="HINDU DIVIDED FAMILY">HINDU DIVIDED FAMILY</option>
+             <option value="ARTIFICIAL JURIDICAL PERSON">ARTIFICIAL JURIDICAL PERSON</option>
+             <option value="LOCAL AUTHORITY">LOCAL AUTHORITY</option>
+            </select>
+            </div> 
+        </div> 
+     
+         <span style="font-size: 20px; color: #007790;">Applicant information</span><img src="png-transparent-white-and-blue-information-logo-information-sign-symbol-visitor-center-tourist-miscellaneous-blue-text.png" style="width: 30px; height: 30px; margin-top: 70px; margin-left: 5px; border-radius: 50%; top: 40px;">
+         <br><br>
+     
+     
+         <div class="restdet">
+            <br><br>
+            <div class="sel3">
+             <label for="">Title</label><br>
+             <select name="--Please Select--" id="1" placeholder="--Please Select--" class="select" selected>
+              <option value="--Please Select----">--Select----</option>
+              <option value="SHRI">SHRI</option>
+              <option value="SMT">SMT</option>
+              <option value="RAM">RAM</option>
+              </select>
+            </div>
+            
+            <div class="sel4"> 
+               <div class="col-sm-4 ">
+                 <label for="">Lastname/Surname</label>
+                 <input type="text" class="input">
+              </div>
+     
+              <div class="col-sm-4">
+                <label for="">Firstname</label>
+                <input type="text" class="input">
+              </div>
+     
+              <div class="col-sm-4">
+                <label for="">Middlename</label>
+                 <input type="text" class="input">
+            </div>
+           </div>
+           <br>
+           <div class="sel5"> 
+             <div class="col-sm-4 ">
+               <label for="">Date of Birth / Incorporation / Formation (DD/MM/YYYY)</label>
+               <input type="date" class="input">
+            </div>
+     
+            <div class="col-sm-4">
+              <label for="">Email-ID</label>
+              <input type="email" class="input">
+            </div>
+     
+            <div class="col-sm-4">
+              <label for="">Mobile Number</label>
+               <input type="tel" class="input">
+          </div>
+         </div>
+            <input type="checkbox" class="checkbox">
+            <br>
+           <p class="botdet">By submitting data to us and/or using our Protean e-Gov TIN web site https://www.onlineservices.Protean.com/paam/endUserRegisterContact.html you give your consent that all personal data/information that you submit to avail tax related services from Protean eGov Technologies Limited may be received, stored, processed, transmitted and or made available for view /use as mandated by law or otherwise, shall be dealt with by us in the manner and for the purposes specified / as described in the privacy policy or as mandated by law. I have also read, understood and expressly agree to be bound by the Privacy Policy https://www.protean-tinpan.com/privacy-policy.html, Disclaimer and web-site usage guidelines as published by Protean on its website from time to time.</p>
+           </div>
+           <input type="reset" value="reset" class="ressub">
+           <input type="submit" value="submit" class="ressub">
+           
+         </form>
+     
+    </div>
+
+
+
+    <div style="display: none;" id="down">
+        <div id="fa12" class="form2div">
+            <form>
+                <div class="sel6"> 
+                   <div class="col-sm-4">
+                     <label for="">Email-ID</label>
+                     <input type="email" class="input">
+                   </div>
+            
+                   <div class="col-sm-4">
+                     <label for="">Mobile Number</label>
+                      <input type="tel" class="input">
+                 </div>
+    
+                 <div class="col-sm-4 ">
+                    <label for="">Date of Birth / Incorporation / Formation (DD/MM/YYYY)</label>
+                    <input type="date" class="input">
+                 </div>
+    
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="form3" id="three">
+        <div class="form3div">
+            <form>
+                <div class="sel6"> 
+                   <div class="col-sm-4">
+                     <label for="">Email-ID</label>
+                     <input type="email" class="input">
+                   </div>
+            
+                   <div class="col-sm-4">
+                     <label for="">Mobile Number</label>
+                      <input type="tel" class="input">
+                   </div>
+                </div>
+            </form> 
+        </div>
+    </div>          
+
+    <script>
+         function apply(){
+            document.getElementById("up").style.display="block";
+            document.getElementById("down").style.display="none";
+            
+         }
+
+
+         function cont(){
+            document.getElementById("up").style.display="none";
+            document.getElementById("down").style.display="block";
+            document.getElementById("three").style.display="none";
+            
+         }
+
+         function third(){
+            document.getElementById("up").style.display="none";
+            document.getElementById("down").style.display="none";
+            document.getElementById("three").style.display="block";
+            
+         }
+    </script>
+
+    
+</body>
+</html>

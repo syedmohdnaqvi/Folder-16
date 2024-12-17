@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Coverter</title>
+</head>
+<body>
+    Inr<input type="number" oninput="inrtoaed(value)" id="one" value="">
+
+    Aed<input type="number" oninput="aedtoinr(value)" id="two" value="">
+
+    <script>
+        function inrtoaed(value){
+            document.getElementById('two').value = value * 0.044;
+        }
+        function aedtoinr(value){
+            document.getElementById('one').value = value / 0.044;    
+        }
+        function inrtoaed2(value){
+            document.getElementById('three').value = value * 0.044;
+        }
+        function aedtoinr2(value){
+            document.getElementById('four').value = value / 0.044;    
+        }
+    </script>
+
+    <br><br>
+
+    Aed <input type="number" id="three" value="" oninput="aedtoinr2(value)">
+
+    Inr <input type="number" id="four" value="" oninput="inrtoaed2(value)">
+
+
+</body>
+</html>

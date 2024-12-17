@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="Shah-Rukh-Khan_172fa644f21_original-ratio.avif" id="img1">
+
+    <button class="display" onclick="display()">Click here</button>
+
+    <button class="hide" onclick="hide()">Click to hide</button>
+
+    <script>
+        document.getElementById('img1').style.display = 'none';
+
+        function display() {
+            document.getElementById('img1').style.display = 'block';
+        }
+
+        function hide() {
+            document.getElementById('img1').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
